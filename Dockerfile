@@ -31,8 +31,5 @@ EXPOSE 8080
 EXPOSE 4848 
 EXPOSE 8181
 
-VOLUME  /home/glassfish/glassfish4.1/glassfish4/glassfish/domains
-
 # Set the default command to run on boot
-# This will boot WildFly in the standalone mode and bind to all interface
 CMD ["home/glassfish/glassfish4.1/glassfish4/bin/asadmin","start-domain","--verbose"]
